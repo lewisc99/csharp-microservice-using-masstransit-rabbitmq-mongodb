@@ -7,5 +7,8 @@ namespace Ms.Person.Entities
     {
         public string Name { get; set; }
         public string Doc { get; set; }
+
+
+      
     }
 }

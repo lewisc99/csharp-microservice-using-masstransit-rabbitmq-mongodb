@@ -37,7 +37,7 @@ namespace Ms.Common.Repositories
         public async Task<T> GetAsync(Guid id)
         {
 
-            FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.id, id);
+            FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id, id);
 
             return await dbCollection.Find(filter).FirstOrDefaultAsync();
 
@@ -67,7 +67,7 @@ namespace Ms.Common.Repositories
         public async Task RemoveAsync(Guid id)
         {
 
-            FilterDefinition<T> filter = filterBuilder.Eq(existingEntity => existingEntity.id, id);
+            FilterDefinition<T> filter = filterBuilder.Eq(existingEntity => existingEntity.Id, id);
 
             await dbCollection.DeleteOneAsync(filter);
         }
@@ -81,7 +81,7 @@ namespace Ms.Common.Repositories
 
             }
 
-            FilterDefinition<T> filter = filterBuilder.Eq(existingEntity => existingEntity.id, entity.id);
+            FilterDefinition<T> filter = filterBuilder.Eq(existingEntity => existingEntity.Id, entity.Id);
             await dbCollection.ReplaceOneAsync(filter, entity);
 
         }
