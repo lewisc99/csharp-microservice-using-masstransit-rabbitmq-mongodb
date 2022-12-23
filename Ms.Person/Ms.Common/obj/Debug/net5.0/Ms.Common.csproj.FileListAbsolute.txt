@@ -1,8 +1,6 @@
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\bin\Debug\net5.0\Ms.Common.deps.json
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\bin\Debug\net5.0\Ms.Common.dll
-C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\bin\Debug\net5.0\ref\Ms.Common.dll
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\bin\Debug\net5.0\Ms.Common.pdb
-C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.csprojAssemblyReference.cache
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.AssemblyInfoInputs.cache
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.AssemblyInfo.cs
@@ -10,3 +8,5 @@ C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Commo
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.dll
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\ref\Ms.Common.dll
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.pdb
+C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.csproj.AssemblyReference.cache
+C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\refint\Ms.Common.dll

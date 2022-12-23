@@ -6,7 +6,12 @@
     <authors>Ms.Common</authors>
     <description>Package Description</description>
     <dependencies>
-      <group targetFramework="net5.0" />
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="MongoDB.Driver" version="2.17.1" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>

@@ -5,6 +5,8 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
+using Ms.Common.Repositories;
+using Ms.Common.Repositories.Contracts;
 using Ms.Common.Settings;
 
 namespace Ms.Common.MongoDB
