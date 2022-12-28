@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MassTransit;
+using Microsoft.AspNetCore.Mvc;
 using Ms.Common.Repositories.Contracts;
 using Ms.Person.Entities;
 using Ms.Person.Entities.Dtos;
@@ -16,6 +17,8 @@ namespace Ms.Person.Controllers
     public class PersonController:ControllerBase
     {
 
+
+        private readonly IBus _bus;
 
         private readonly IRepository<PersonEntity> repository;
         public PersonController(IRepository<PersonEntity> repository)
@@ -52,6 +55,15 @@ namespace Ms.Person.Controllers
 
             PersonEntity person = createPersonDto.AsPersonEntity();
             await repository.CreateAsync(person);
+
+            User user = new User(person.id, createPersonDto.email, createPersonDto.password); 
+
+            
+
+            Uri uri = new Uri("rabbitmq://localhost/personQueue");
+            var endpoint = await _bus.GetSendEndpoint(uri);
+
+            await endpoint.Send(user);
 
             return Accepted();
 

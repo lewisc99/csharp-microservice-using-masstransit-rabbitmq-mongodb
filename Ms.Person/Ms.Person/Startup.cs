@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using Ms.Common.MongoDB;
 using Ms.Common.Settings;
 using Ms.Person.Entities;
+using Ms.Person.MassTransit;
 
 namespace Ms.Person
 {
@@ -38,6 +39,7 @@ namespace Ms.Person
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ms.Person", Version = "v1" });
             });
 
+            services.configureMassTransit();
 
         }
 
