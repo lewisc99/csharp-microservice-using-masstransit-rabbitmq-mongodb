@@ -8,15 +8,6 @@
       "sslPort": 44300
     }
   },
-  "profiles": {
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
     "Ms.User": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
@@ -28,4 +19,4 @@
       }
     }
   }
-}
+

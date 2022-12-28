@@ -21,9 +21,10 @@ namespace Ms.Person.Controllers
         private readonly IBus _bus;
 
         private readonly IRepository<PersonEntity> repository;
-        public PersonController(IRepository<PersonEntity> repository)
+        public PersonController(IRepository<PersonEntity> repository, IBus bus)
         {
             this.repository = repository;
+            _bus = bus;
         }
 
         [HttpGet]
