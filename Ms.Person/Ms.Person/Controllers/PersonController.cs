@@ -56,7 +56,7 @@ namespace Ms.Person.Controllers
             PersonEntity person = createPersonDto.AsPersonEntity();
             await repository.CreateAsync(person);
 
-            User user = new User(person.id, createPersonDto.email, createPersonDto.password); 
+            UserCreatedDto user = new UserCreatedDto(person.id, createPersonDto.email, createPersonDto.password); 
 
             
 

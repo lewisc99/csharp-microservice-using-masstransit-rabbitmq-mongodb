@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Ms.User.MassTransitConfiguration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,8 @@ namespace Ms.User
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ms.User", Version = "v1" });
             });
+
+            services.ConfigureMassTransit();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -9,6 +9,6 @@ namespace Ms.Person.Entities.Dtos
 
         public record CreatePersonDto(string name, string doc, string email, string password);
 
-        public record User(Guid id, string email, string password);
+        public record UserCreatedDto(Guid id, string email, string password);
     }
 }
