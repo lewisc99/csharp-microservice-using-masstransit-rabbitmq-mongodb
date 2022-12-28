@@ -51,7 +51,6 @@ namespace Ms.Person.Controllers
 
 
             PersonEntity person = createPersonDto.AsPersonEntity();
-
             await repository.CreateAsync(person);
 
             return Accepted();
