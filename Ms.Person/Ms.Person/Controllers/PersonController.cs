@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using static Ms.Person.Entities.Dtos.Dtos;
+using static Ms.Common.Entities.Dtos.Dtos;
 
 namespace Ms.Person.Controllers
 {
@@ -19,12 +19,15 @@ namespace Ms.Person.Controllers
 
 
         private readonly IBus _bus;
+        private readonly IPublishEndpoint publishEndpoint;
+
 
         private readonly IRepository<PersonEntity> repository;
-        public PersonController(IRepository<PersonEntity> repository, IBus bus)
+        public PersonController(IRepository<PersonEntity> repository, IBus bus, IPublishEndpoint publishEndpoint)
         {
             this.repository = repository;
             _bus = bus;
+            this.publishEndpoint = publishEndpoint;
         }
 
         [HttpGet]
@@ -57,11 +60,14 @@ namespace Ms.Person.Controllers
             PersonEntity person = createPersonDto.AsPersonEntity();
             await repository.CreateAsync(person);
 
-            UserCreatedDto user = new UserCreatedDto(person.id, createPersonDto.email, createPersonDto.password); 
+            UserCreatedDto user = new UserCreatedDto(person.Id, createPersonDto.email, createPersonDto.password);
 
-            
 
-            Uri uri = new Uri("rabbitmq://localhost/personQueue");
+
+            //  await publishEndpoint.Publish<UserCreatedDto>(user);
+
+
+            Uri uri = new Uri("queue:UserCreated");
             var endpoint = await _bus.GetSendEndpoint(uri);
 
             await endpoint.Send(user);

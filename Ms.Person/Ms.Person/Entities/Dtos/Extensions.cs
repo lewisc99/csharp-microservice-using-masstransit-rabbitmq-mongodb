@@ -1,5 +1,5 @@
 ﻿
-using static Ms.Person.Entities.Dtos.Dtos;
+using static Ms.Common.Entities.Dtos.Dtos;
 
 namespace Ms.Person.Entities.Dtos
 {
@@ -8,7 +8,7 @@ namespace Ms.Person.Entities.Dtos
 
         public static PersonDto AsPersonDto(this PersonEntity person)
         {
-            return new PersonDto(person.id, person.Name, person.Doc);
+            return new PersonDto(person.Id, person.Name, person.Doc);
         }
 
 

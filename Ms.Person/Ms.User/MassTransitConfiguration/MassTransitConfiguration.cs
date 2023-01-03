@@ -3,6 +3,7 @@ using MassTransit;
 using Microsoft.Extensions.DependencyInjection;
 using Ms.User.Consumers;
 using System;
+using System.Reflection;
 
 namespace Ms.User.MassTransitConfiguration
 {
@@ -25,14 +26,17 @@ namespace Ms.User.MassTransitConfiguration
                     });
 
 
-                    cfg.ReceiveEndpoint("personQueue", endpoint =>
-                   {
-                       endpoint.PrefetchCount = 10;
-                       endpoint.UseMessageRetry(r => r.Interval(2, 100));
-                       endpoint.ConfigureConsumer<UserCreatedConsumer>(provider);
-                   });
+                    cfg.ReceiveEndpoint("UserCreated", endpoint =>
+                    {
+                        endpoint.BindQueue = true;
+                        endpoint.PrefetchCount = 10;
+                        endpoint.UseMessageRetry(r => r.Interval(2, 100));
+                        endpoint.ConfigureConsumer<UserCreatedConsumer>(provider);
+                    });
+
+
                 }));
-            });
+            }).AddMassTransitHostedService();
 
 
             return services;

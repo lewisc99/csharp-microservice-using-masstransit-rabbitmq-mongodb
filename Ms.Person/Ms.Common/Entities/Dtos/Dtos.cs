@@ -1,7 +1,7 @@
-﻿
-using System;
+﻿using System;
 
-namespace Ms.Person.Entities.Dtos
+
+namespace Ms.Common.Entities.Dtos
 {
     public class Dtos
     {

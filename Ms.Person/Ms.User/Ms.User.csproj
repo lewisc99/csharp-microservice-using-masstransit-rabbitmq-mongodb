@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Ms.Common" Version="1.0.0" />
+	<PackageReference Include="Ms.Common" Version="1.0.1" />
 	<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
 	<PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
 	<PackageReference Include="MassTransit" Version="7.3.1" />
@@ -15,6 +15,7 @@
 
   <ItemGroup>
 	<Folder Include="Controllers\" />
+	<Folder Include="Entities\Dtos\" />
   </ItemGroup>
 
 </Project>

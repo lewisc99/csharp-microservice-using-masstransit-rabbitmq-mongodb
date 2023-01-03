@@ -17,13 +17,14 @@ namespace Ms.Person.MassTransit
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
 
-                    config.Host(new Uri("rabbitmq://localhost"), host =>
+                    config.Host(new Uri("rabbitmq://localhost/"), host =>
                     {
                         host.Username("guest");
                         host.Password("guest");
                     });
 
                 }));
+               
             }).AddMassTransitHostedService();
 
             return services;

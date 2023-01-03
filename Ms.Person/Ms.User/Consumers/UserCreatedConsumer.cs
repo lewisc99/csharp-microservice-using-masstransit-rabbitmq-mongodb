@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
-using static Ms.User.Entities.Dtos.Dtos;
+using static Ms.Common.Entities.Dtos.Dtos;
 
 namespace Ms.User.Consumers
 {
@@ -19,10 +19,11 @@ namespace Ms.User.Consumers
         public async Task Consume(ConsumeContext<UserCreatedDto> context)
         {
 
-            await Console.Out.WriteLineAsync("Id: " + context.Message.Id );
+           await Console.Out.WriteLineAsync("Enter message (or quit to exit)");
+            Console.Write("> ");
 
             logger.LogInformation($"New User created received: " +
-                $"{context.Message.Email } - {context.Message.Password}");
+                $"{context.Message.email } - {context.Message.password}");
 
         }
     }
