@@ -35,7 +35,6 @@ namespace Ms.Person.Controllers
         {
 
             var personsDto = (await repository.GetAllAsync()).Select(persons => persons.AsPersonDto());
-
             return Ok(personsDto);
         }
 
@@ -59,20 +58,18 @@ namespace Ms.Person.Controllers
 
             PersonEntity person = createPersonDto.AsPersonEntity();
             await repository.CreateAsync(person);
-
             UserCreatedDto user = new UserCreatedDto(person.Id, createPersonDto.email, createPersonDto.password);
-
-
-
-            //  await publishEndpoint.Publish<UserCreatedDto>(user);
-
-
             Uri uri = new Uri("queue:UserCreated");
             var endpoint = await _bus.GetSendEndpoint(uri);
 
             await endpoint.Send(user);
-
             return Accepted();
+
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> PutAsync()
+        {
 
         }
     }

@@ -7,13 +7,10 @@ namespace Ms.Person.MassTransit
 {
     public static class MassTransitConfiguration
     {
-
         public static IServiceCollection configureMassTransit(this IServiceCollection services)
         {
-
             services.AddMassTransit(x =>
             {
-
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(config =>
                 {
 
@@ -22,11 +19,9 @@ namespace Ms.Person.MassTransit
                         host.Username("guest");
                         host.Password("guest");
                     });
-
                 }));
                
             }).AddMassTransitHostedService();
-
             return services;
         }
 

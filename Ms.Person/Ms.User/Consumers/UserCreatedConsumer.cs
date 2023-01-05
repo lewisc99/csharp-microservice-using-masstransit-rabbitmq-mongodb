@@ -8,7 +8,6 @@ namespace Ms.User.Consumers
 {
     public class UserCreatedConsumer: IConsumer<UserCreatedDto>
     {
-
         private readonly ILogger<UserCreatedConsumer> logger;
 
         public UserCreatedConsumer(ILogger<UserCreatedConsumer> logger)
@@ -24,7 +23,6 @@ namespace Ms.User.Consumers
 
             logger.LogInformation($"New User created received: " +
                 $"{context.Message.email } - {context.Message.password}");
-
         }
     }
 }

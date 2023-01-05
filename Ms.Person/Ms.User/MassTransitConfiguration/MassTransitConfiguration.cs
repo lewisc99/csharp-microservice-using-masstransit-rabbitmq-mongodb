@@ -25,7 +25,6 @@ namespace Ms.User.MassTransitConfiguration
                         h.Username("guest");
                     });
 
-
                     cfg.ReceiveEndpoint("UserCreated", endpoint =>
                     {
                         endpoint.BindQueue = true;
@@ -33,14 +32,10 @@ namespace Ms.User.MassTransitConfiguration
                         endpoint.UseMessageRetry(r => r.Interval(2, 100));
                         endpoint.ConfigureConsumer<UserCreatedConsumer>(provider);
                     });
-
-
                 }));
             }).AddMassTransitHostedService();
 
-
             return services;
-
         }
     }
 }

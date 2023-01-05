@@ -10,5 +10,10 @@ namespace Ms.Common.Entities.Dtos
         public record CreatePersonDto(string name, string doc, string email, string password);
 
         public record UserCreatedDto(Guid id, string email, string password);
+
+        public record UpdatePersonDto(string name);
+
+        public record UserUpdatedDto(Guid personId, string name);
+
     }
 }
