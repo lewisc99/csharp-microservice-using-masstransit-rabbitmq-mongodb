@@ -16,6 +16,7 @@ namespace Ms.User.MassTransitConfiguration
             services.AddMassTransit(x =>
             {
                 x.AddConsumer<UserCreatedConsumer>();
+                x.AddConsumer<UserUpdateConsumer>();
 
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
                 {
@@ -32,6 +33,15 @@ namespace Ms.User.MassTransitConfiguration
                         endpoint.UseMessageRetry(r => r.Interval(2, 100));
                         endpoint.ConfigureConsumer<UserCreatedConsumer>(provider);
                     });
+
+                    cfg.ReceiveEndpoint("UserUpdated", endpoint =>
+                    {
+                        endpoint.BindQueue = true;
+                        endpoint.PrefetchCount = 10;
+                        endpoint.UseMessageRetry(r => r.Interval(2, 100));
+                        endpoint.ConfigureConsumer<UserUpdateConsumer>(provider);
+                    });
+
                 }));
             }).AddMassTransitHostedService();
 
