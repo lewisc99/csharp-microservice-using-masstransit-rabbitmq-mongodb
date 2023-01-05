@@ -68,8 +68,22 @@ namespace Ms.Person.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> PutAsync()
+        public async Task<ActionResult<PersonDto>> PutAsync(Guid id, [FromBody] UpdatePersonDto updatePersonDto)
         {
+
+            PersonEntity person = await repository.GetAsync(id);
+
+            if (person == null)
+            {
+                return NotFound();
+            }
+            person.Name = updatePersonDto.name;
+
+            await repository.UpdateAsync(person);
+
+            PersonDto personDto = person.AsPersonDto();
+
+            return Ok(personDto);
 
         }
     }

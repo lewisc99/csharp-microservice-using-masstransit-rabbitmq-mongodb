@@ -9,3 +9,4 @@ C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Commo
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\ref\Ms.Common.dll
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.pdb
 C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\bin\Debug\net5.0\ref\Ms.Common.dll
+C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Common\obj\Debug\net5.0\Ms.Common.csprojAssemblyReference.cache
