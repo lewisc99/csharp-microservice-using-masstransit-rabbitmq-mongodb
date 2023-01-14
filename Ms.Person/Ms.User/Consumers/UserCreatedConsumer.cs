@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Ms.Common.Repositories.Contracts;
 using Ms.User.Entities;
+using Ms.User.Entities.Dtos;
 using System;
 using System.Threading.Tasks;
 using static Ms.Common.Entities.Dtos.Dtos;
@@ -22,14 +23,24 @@ namespace Ms.User.Consumers
         public async Task Consume(ConsumeContext<UserCreatedDto> context)
         {
 
-           await Console.Out.WriteLineAsync("Enter message (or quit to exit)");
-            Console.Write("> ");
-
-            logger.LogInformation($"New User created received: " +
-                $"{context.Message.email } - {context.Message.password}");
+            try
+            {
 
 
+                await Console.Out.WriteLineAsync("Enter message (or quit to exit)");
+                Console.Write("> ");
 
+                logger.LogInformation($"New User created received: " +
+                    $"{context.Message.email } - {context.Message.password}");
+
+                UserEntity user = context.Message.convertUserCreatedDtoToUSerEntity();
+                await _repository.CreateAsync(user);
+
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
 
         }
     }
