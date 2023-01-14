@@ -54,8 +54,6 @@ namespace Ms.Person.Controllers
         [HttpPost("")]
         public async Task<ActionResult> PostAsync(CreatePersonDto createPersonDto)
         {
-
-
             PersonEntity person = createPersonDto.AsPersonEntity();
             await repository.CreateAsync(person);
             UserCreatedDto user = new UserCreatedDto(person.Id, createPersonDto.email, createPersonDto.password);
