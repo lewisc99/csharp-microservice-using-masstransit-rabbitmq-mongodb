@@ -88,5 +88,24 @@ namespace Ms.Person.Controllers
             return Ok(personDto);
 
         }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteAsync(Guid id)
+        {
+            PersonEntity person = await repository.GetAsync(id);
+
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+            await repository.RemoveAsync(id);
+            UserDeleteDto userDelete = new UserDeleteDto(id);
+            Uri uri = new Uri("queue:userDelete");
+            var endpoint = await _bus.GetSendEndpoint(uri);
+            await endpoint.Send(userDelete);
+
+            return NoContent();
+        }
     }
 }
