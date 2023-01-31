@@ -42,6 +42,15 @@ namespace Ms.User.MassTransitConfiguration
                         endpoint.ConfigureConsumer<UserUpdateConsumer>(provider);
                     });
 
+
+                    cfg.ReceiveEndpoint("UserDelete", endpoint =>
+                    {
+                        endpoint.BindQueue = true;
+                        endpoint.PrefetchCount = 10;
+                        endpoint.UseMessageRetry(r => r.Interval(2, 100));
+                        endpoint.ConfigureConsumer<UserDeleteConsumer>(provider);
+                    });
+
                 }));
             }).AddMassTransitHostedService();
 

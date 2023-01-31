@@ -101,7 +101,7 @@ namespace Ms.Person.Controllers
 
             await repository.RemoveAsync(id);
             UserDeleteDto userDelete = new UserDeleteDto(id);
-            Uri uri = new Uri("queue:userDelete");
+            Uri uri = new Uri("queue:UserDelete");
             var endpoint = await _bus.GetSendEndpoint(uri);
             await endpoint.Send(userDelete);
 
