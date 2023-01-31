@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\Ms.User.csproj": {
-      "version": "1.0.4",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\Ms.User.csproj",
         "projectName": "Ms.User",
@@ -65,7 +65,7 @@
             },
             "Ms.Common": {
               "target": "Package",
-              "version": "[1.0.3, )"
+              "version": "[1.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -78,8 +78,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -91,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

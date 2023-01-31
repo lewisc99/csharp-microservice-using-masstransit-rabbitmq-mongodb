@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XHKjN4J/McbX+z2nyK+Ic/xIYJjSiZWKZx7A9GzGozqthNYiXYRmG6xDQDumXfY41qkLrWUasObWw2GkRZWnAQ==",
+  "dgSpecHash": "IrPuUV3W5nxW/byxW7sRDwmMI9u91tqJkfmjDrIXntTwKKUOQksvmkHL3Y0xuH4RDQHkPywwSFKTwqTXyaEC2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.Person\\Ms.Person.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\Pichau\\.nuget\\packages\\mongodb.driver\\2.17.1\\mongodb.driver.2.17.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\mongodb.driver.core\\2.17.1\\mongodb.driver.core.2.17.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\mongodb.libmongocrypt\\1.5.5\\mongodb.libmongocrypt.1.5.5.nupkg.sha512",
-    "C:\\Users\\Pichau\\.nuget\\packages\\ms.common\\1.0.3\\ms.common.1.0.3.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\ms.common\\1.0.4\\ms.common.1.0.4.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\newid\\3.0.3\\newid.3.0.3.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
