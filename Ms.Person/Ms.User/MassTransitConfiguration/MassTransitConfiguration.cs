@@ -17,6 +17,7 @@ namespace Ms.User.MassTransitConfiguration
             {
                 x.AddConsumer<UserCreatedConsumer>();
                 x.AddConsumer<UserUpdateConsumer>();
+                x.AddConsumer<UserDeleteConsumer>();
 
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
                 {
