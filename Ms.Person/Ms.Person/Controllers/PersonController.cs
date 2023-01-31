@@ -79,7 +79,7 @@ namespace Ms.Person.Controllers
 
             await repository.UpdateAsync(person);
 
-            UserUpdatedDto userUpdatedDto = new UserUpdatedDto(person.Id, person.Name);
+            UserUpdatedDto userUpdatedDto = new UserUpdatedDto(person.Id, person.Name, updatePersonDto.email);
             Uri uri = new Uri("queue:UserUpdated");
             var endpoint = await _bus.GetSendEndpoint(uri);
             await endpoint.Send(userUpdatedDto);
