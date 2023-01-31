@@ -17,9 +17,10 @@ namespace Ms.User.Consumers
             this.logger = logger;
         }
 
-        public Task Consume(ConsumeContext<UserDeleteDto> context)
+        public async Task Consume(ConsumeContext<UserDeleteDto> context)
         {
-            throw new System.NotImplementedException();
+
+            logger.LogInformation("Person Id to Delete: " + context.Message.personId);
         }
     }
 }
