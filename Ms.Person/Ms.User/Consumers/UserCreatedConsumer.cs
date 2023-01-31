@@ -33,7 +33,7 @@ namespace Ms.User.Consumers
                 logger.LogInformation($"New User created received: " +
                     $"{context.Message.email } - {context.Message.password}");
 
-                UserEntity user = context.Message.convertUserCreatedDtoToUSerEntity();
+                UserEntity user = context.Message.convertUserCreatedDtoToUserEntity();
                 await _repository.CreateAsync(user);
 
             }
