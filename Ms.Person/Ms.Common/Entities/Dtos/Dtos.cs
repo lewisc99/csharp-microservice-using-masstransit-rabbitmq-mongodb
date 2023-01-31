@@ -15,5 +15,7 @@ namespace Ms.Common.Entities.Dtos
 
         public record UserUpdatedDto(Guid personId, string name, string email);
 
+        public record UserDeleteDto(Guid personId);
+
     }
 }
