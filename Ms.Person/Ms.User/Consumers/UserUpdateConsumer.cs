@@ -21,7 +21,7 @@ namespace Ms.User.Consumers
 
             await Console.Out.WriteLineAsync("Enter message (or quit to exit)");
 
-            logger.LogInformation("User updated: " + context.Message.personId + " username: " + context.Message.name);
+            logger.LogInformation("User updated: " + context.Message.personId + " username: " + context.Message.name + "new email: " + context.Message.email);
 
         }
     }
