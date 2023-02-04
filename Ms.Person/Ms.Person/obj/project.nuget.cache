@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IrPuUV3W5nxW/byxW7sRDwmMI9u91tqJkfmjDrIXntTwKKUOQksvmkHL3Y0xuH4RDQHkPywwSFKTwqTXyaEC2w==",
+  "dgSpecHash": "e9/itgMB2JVfhFs24Hot1xgI6+KlyxmEMpwCNHHpbZrhKAh0t1FGUXwMW38TkPELu+0TEPIEVIQtSmAlAm6iEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.Person\\Ms.Person.csproj",
+  "projectFilePath": "D:\\arquivos\\programation\\workspace-Csharp\\2023\\month-1\\microservice-person-masstransit-and-mongo\\Ms.Person\\Ms.Person\\Ms.Person.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pichau\\.nuget\\packages\\automatonymous\\5.1.3\\automatonymous.5.1.3.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

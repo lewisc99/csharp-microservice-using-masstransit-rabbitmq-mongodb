@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Ms.Person
-build_property.ProjectDir = C:\Users\Pichau\Downloads\bootcamp\Ms.Person\Ms.Person\
+build_property.ProjectDir = D:\arquivos\programation\workspace-Csharp\2023\month-1\microservice-person-masstransit-and-mongo\Ms.Person\Ms.Person\

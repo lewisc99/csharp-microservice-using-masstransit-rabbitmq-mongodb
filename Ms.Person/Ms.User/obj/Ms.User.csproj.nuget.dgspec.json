@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\Ms.User.csproj": {}
+    "D:\\arquivos\\programation\\workspace-Csharp\\2023\\month-1\\microservice-person-masstransit-and-mongo\\Ms.Person\\Ms.User\\Ms.User.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\Ms.User.csproj": {
+    "D:\\arquivos\\programation\\workspace-Csharp\\2023\\month-1\\microservice-person-masstransit-and-mongo\\Ms.Person\\Ms.User\\Ms.User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\Ms.User.csproj",
+        "projectUniqueName": "D:\\arquivos\\programation\\workspace-Csharp\\2023\\month-1\\microservice-person-masstransit-and-mongo\\Ms.Person\\Ms.User\\Ms.User.csproj",
         "projectName": "Ms.User",
-        "projectPath": "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\Ms.User.csproj",
+        "projectPath": "D:\\arquivos\\programation\\workspace-Csharp\\2023\\month-1\\microservice-person-masstransit-and-mongo\\Ms.Person\\Ms.User\\Ms.User.csproj",
         "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\Downloads\\bootcamp\\Ms.Person\\Ms.User\\obj\\",
+        "outputPath": "D:\\arquivos\\programation\\workspace-Csharp\\2023\\month-1\\microservice-person-masstransit-and-mongo\\Ms.Person\\Ms.User\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
