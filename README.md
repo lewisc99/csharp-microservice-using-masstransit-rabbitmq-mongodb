@@ -1,12 +1,26 @@
-﻿## Cadastro de Pessoas Microsserviços com Mensageria RabbitMQ <br/>
+﻿## <h1> People Registration Microservices with RabbitMQ Messaging </h1> <br/>
 <hr>
 <br/>
+
+<h2>Description English</h2>
+<p>People registration application, where you can register a new person, and this registration is forwarded to another User Microservice with RabbitMQ and MassTransit,
+where this other user who also has their own Database is updated or registered.
+</p>
 
 <h2>Descrição Português</h2>
 <p>Aplicação de cadastro de pessoas, onde você pode cadastrar uma nova pessoa, e este cadastro e encaminhado para outro Microsserviço de Usuário com RabbitMQ e MassTransit,
 onde este outro usuario que também têm um Banco de Dados próprio é atualizado ou cadastrado.
 </p>
+<hr/>
+<h4>How To Run</h4>
+<p>To run the project Just access the Ms.Person folder and type in the terminal
+"docker-compose up"
+and right after running the Ms.User and Ms.Person projects, the Ms.Person service and the producer
+and the Ms.User and the consumer.
+Therefore, when you perform an Update or Registration or Deletion in the Ms.Person application, the application
+Ms.User will be changed as well.</p>
 <p>
+<h4>Como rodar o Project</h4>
 Para rodar o projeto Basta acessar a pasta Ms.Person e digitar no terminal
 "docker-compose up"
 e logo apos executar os projetos Ms.User e Ms.Person o serviço Ms.Person e o produtor
@@ -15,6 +29,7 @@ Sendo assim quando você faz um Update ou Cadastro ou Deleção na aplicação M
 Ms.User vai ser alterada também.
 </p>
 <p>
+<hr/>
 Containers: 
 <img src="imgs/docker.JPG"/>
 </p>
