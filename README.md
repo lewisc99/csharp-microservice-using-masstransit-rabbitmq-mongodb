@@ -1,5 +1,4 @@
 ﻿## <h1> People Registration Microservices with RabbitMQ Messaging </h1> <br/>
-<hr>
 <br/>
 
 <h2>Description English</h2>
