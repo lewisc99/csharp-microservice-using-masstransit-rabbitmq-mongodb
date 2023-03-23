@@ -2,12 +2,22 @@
 <br/>
 
 <h2>Description English</h2>
-<p>People registration application, where you can register a new person, and this registration is forwarded to another User Microservice with RabbitMQ and MassTransit,
+<p>With the people registration application that uses RabbitMQ and MassTransit,
+  you can be confident that your data will be updated in real time in another Microservice
+  of User with its own Database. Don't waste any more time with spreadsheets and physical documents,
+  have an efficient and secure system to manage your records and optimize your processes.
+  Person registration application, where you can register a new person, and this registration
+  and forwarded to another User Microservice with RabbitMQ and MassTransit,
 where this other user who also has their own Database is updated or registered.
 </p>
 
 <h2>Descrição Português</h2>
-<p>Aplicação de cadastro de pessoas, onde você pode cadastrar uma nova pessoa, e este cadastro e encaminhado para outro Microsserviço de Usuário com RabbitMQ e MassTransit,
+<p>Com a aplicação de cadastro de pessoas que utiliza RabbitMQ e MassTransit,
+ você pode ter certeza de que seus dados serão atualizados em tempo real em outro Microsserviço
+ de Usuário com Banco de Dados próprio. Não perca mais tempo com planilhas e documentos físicos,
+ tenha um sistema eficiente e seguro para gerenciar seus cadastros e otimize seus processos.
+ Aplicação de cadastro de pessoas, onde você pode cadastrar uma nova pessoa, e este cadastro
+ e encaminhado para outro Microsserviço de Usuário com RabbitMQ e MassTransit,
 onde este outro usuario que também têm um Banco de Dados próprio é atualizado ou cadastrado.
 </p>
 <hr/>
@@ -27,8 +37,12 @@ e o Ms.User e o consumidor.
 Sendo assim quando você faz um Update ou Cadastro ou Deleção na aplicação Ms.Person a aplicação
 Ms.User vai ser alterada também.
 </p>
-<p>
 <hr/>
+<p>
+Whole Application: 
+<img src="imgs/microsservico-csharp-masstransit.gif"/>
+</p>
+<p>
 Containers: 
 <img src="imgs/docker.JPG"/>
 </p>
