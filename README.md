@@ -73,9 +73,7 @@ Ms.User:
 
 <br/>
 <hr>
-
 <hr>
-
 ## Linkedin Below - Linkedin ABaixo
 
 <h4 align="center">
